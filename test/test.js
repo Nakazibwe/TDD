@@ -31,12 +31,15 @@ describe('Multiply TDD Test', () => {
 describe('TLD factorial', () => {
   // First TLD Test.
   it('TLD Test 1', () => {
-    let n = factorial.arguments;
-    n = 3;
-    assert.typeOf(factorial(n), 'number');
+    assert.equal(factorial('hello'), undefined);
   });
   // Second TLD Test
   it('TLD Test 2', () => {
     assert.equal(factorial(4), 24);
+  });
+  // Third TLD Test
+  it('TLD Test 3', () => {
+    const n = 5;
+    assert.typeOf(factorial(n), 'number');
   });
 });
