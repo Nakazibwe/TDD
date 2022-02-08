@@ -1,10 +1,9 @@
 /* eslint-disable no-undef */
-// Test First TDD
-// Multiply
-// First Cycle
+
 const { assert } = require('chai');
 const { describe } = require('mocha');
 const multiply = require('./multiply');
+const factorial = require('./factorial');
 
 describe('Multiply TDD Test', () => {
   // First Test.
@@ -26,5 +25,14 @@ describe('Multiply TDD Test', () => {
   // Fifth Test
   it('TTD Test 5', () => {
     assert.equal(multiply(23, 45), 23 * 45);
+  });
+});
+
+describe('TLD factorial', () => {
+  // First TLD Test.
+  it('TLD Test 1', () => {
+    let n = factorial.arguments;
+    n = 3;
+    assert.typeOf(factorial(n), 'number');
   });
 });
