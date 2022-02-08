@@ -35,4 +35,8 @@ describe('TLD factorial', () => {
     n = 3;
     assert.typeOf(factorial(n), 'number');
   });
+  // Second TLD Test
+  it('TLD Test 2', () => {
+    assert.equal(factorial(4), 24);
+  });
 });
